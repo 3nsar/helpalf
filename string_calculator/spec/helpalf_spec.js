@@ -29,5 +29,11 @@ describe('Help ALF', function () {
 		expect(helpAlf.findSpaceship(map)).toBe("Spaceship lost forever.");
 	});
 
+    it('should return the correct coordinates [0, 0] when spaceship is found', function () {
+		const map =
+			"X"
+		expect(helpAlf.findSpaceship(map)).toEqual([0, 0]);
+	});
+
 
 });
