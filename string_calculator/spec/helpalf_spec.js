@@ -41,6 +41,17 @@ describe('Help ALF', function () {
 		expect(helpAlf.findSpaceship(map)).toEqual([1, 0]);
 	});
 
+	it('should return the correct coordinates [7, 2] when spaceship is found', function () {
+		const map =
+			"..........\n" +
+			"..........\n" +
+			"..........\n" +
+			".......X..\n" +
+			"..........\n" +
+			"..........";
+		expect(helpAlf.findSpaceship(map)).toEqual([7, 2]);
+	});
+
 
 
 });
